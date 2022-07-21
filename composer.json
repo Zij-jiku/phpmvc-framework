@@ -1,0 +1,25 @@
+{
+  "name": "zijza/phpmvc",
+  "description": "a simple lightweight php mvc framework",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "MD Jahidul Islam Jiku",
+      "email": "safzahidul.cse@gmail.com"
+    }
+  ],
+  "require": {
+    "pecee/simple-router": "dev-master",
+    "vlucas/phpdotenv": "5.4.x-dev"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    },
+    "files": [
+      "app/Base/functions.php"
+    ]
+  },
+  "minimum-stability": "dev"
+}
