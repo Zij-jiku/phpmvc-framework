@@ -16,28 +16,28 @@ class Model
     {
         try {
             // DB HOST
-            $dbHost = isset($_ENV['DB_HOST']) ? $_ENV['DB_HOST'] : '';
+            $dbHost = env('DB_HOST');
             if (empty($dbHost)) {
                 throw new Exception('Please Provide DB HOST in .env file');
             }
 
             // DB Port
-            $dbPort = isset($_ENV['DB_PORT']) ? $_ENV['DB_PORT'] : '';
+            $dbPort = env('DB_PORT');
             if (empty($dbPort)) {
                 throw new Exception('Please Provide DB Port in .env file');
             }
 
             // DB User
-            $dbUser = isset($_ENV['DB_USER']) ? $_ENV['DB_USER'] : '';
+            $dbUser = env('DB_USER');
             if (empty($dbUser)) {
                 throw new Exception('Please Provide DB User in .env file');
             }
 
             // DB Password
-            $dbPassword = isset($_ENV['DB_PASSWORD']) ? $_ENV['DB_PASSWORD'] : '';
+            $dbPassword = env('DB_PASSWORD');
 
             // DB Name
-            $dbName = isset($_ENV['DB_NAME']) ? $_ENV['DB_NAME'] : '';
+            $dbName = env('DB_NAME');
             if (empty($dbName)) {
                 throw new Exception('Please Provide DB Name in .env file');
             }
@@ -50,25 +50,51 @@ class Model
         }
     }
 
-    public function execute(string $sqlQuery): \PDOStatement|false
+    // SQL Query
+    /**
+     * Execute PDO query.
+     *
+     * @param string $sqlQuery
+     * @return \PDOStatement|false
+     */
+    public function execute(string $sqlQuery, array $bindParams = []): \PDOStatement|false
     {
-        // use the connection here
-        $data = $this->connect()->query($sqlQuery);
-        $data->execute();
-        return $data;
+        $pdo = $this->connect();
+        $stmt = $pdo->prepare($sqlQuery);
+        $stmt->execute($bindParams);
+        return $stmt;
     }
 
-    public function fetchAll(string $sqlQuery): array|false
+    /**
+     * Get all records from the database.
+     *
+     * @param string $sqlQuery
+     * @return array|false
+     */
+    public function fetchAll(string $sqlQuery, array $bindParams = []): array|false
     {
-        // use the connection here
-        $data = $this->execute($sqlQuery);
-        return $data->fetchAll(\PDO::FETCH_ASSOC);
+        $stmt = $this->execute($sqlQuery, $bindParams);
+        return $stmt->fetchAll(\PDO::FETCH_ASSOC);
     }
 
-    public function fetchObj(string $sqlQuery): mixed
+    /**
+     * Get one record from the database.
+     *
+     * @param string $sqlQuery
+     * @return array|false
+     */
+
+    public function store(string $sqlQuery)
     {
-        // use the connection here
-        $data = $this->execute($sqlQuery);
-        return $data->fetch(\PDO::FETCH_ASSOC);
+        $stmt = $this->execute($sqlQuery);
+        return $stmt;
+    }
+
+    // delete function to delete data from portfolios table
+    public function delete(string $sqlQuery, array $bindParams = [])
+    {
+        $stmt = $this->execute($sqlQuery, $bindParams);
+        return $stmt;
+        redirect('/portfolios');
     }
 }
