@@ -1,0 +1,2629 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap");
+
+/*------------------------------------------------------------
+==================ALL CSS PART================================
+01. Common Tag Start
+02. Header Part Start
+03. Banner Part Start
+04. About Part Start
+05. Skills Part Start
+06. Services Part Start
+07. Price Part Start
+08. Team Part Start
+09. Feedback Part Start
+10. Company Part Start
+11. Counter Part Start
+12. Contact Part Start
+13. Footer Part Start
+14. Scroll Button Part Start
+15. Preloader Part Start
+--------------------------------------------------------------*/
+/*------------------------------------------------------------
+01.  Common Tag Start
+--------------------------------------------------------------*/
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.img {
+    max-width: 100%;
+    transition: all 0.3s ease-out 0s;
+}
+
+a:focus,
+.btn:focus,
+.button:focus {
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
+}
+
+a:focus,
+a:hover,
+.portfolio-cat a:hover,
+.footer -menu li a:hover {
+    text-decoration: none;
+    color: #02C0CE;
+}
+
+a,
+button {
+    color: #02C0CE;
+    outline: medium none;
+}
+
+button:focus,
+input:focus,
+input:focus,
+textarea,
+textarea:focus {
+    outline: 0;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0px;
+}
+
+ol,
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 2;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+*::-moz-selection {
+    background: #d6b161;
+    color: #fff;
+    text-shadow: none;
+}
+
+::-moz-selection {
+    background: #444;
+    color: #fff;
+    text-shadow: none;
+}
+
+::selection {
+    background: #444;
+    color: #fff;
+    text-shadow: none;
+}
+
+*::-moz-placeholder {
+    color: #555555;
+    font-size: 14px;
+    opacity: 1;
+}
+
+*::placeholder {
+    color: #555555;
+    font-size: 14px;
+    opacity: 1;
+}
+
+/*------------------------------------------------------------
+ Common Tag End
+--------------------------------------------------------------*/
+header .navbar-nav .nav-item .nav-link,
+header .navbar-nav .nav-item .nav-link.active:after,
+.menufix,
+#banner_part .banner_text a,
+#about_part .hire_text a,
+#about_part .about_botton .about_botton1,
+#about_part .about_botton2,
+#about_part ul.pills_ul li.nav-item,
+#services_part .icon_box_01 i,
+#price_part .planing_one,
+#price_part .planing_one h3,
+#price_part .planing_one .circle_one .circle,
+#price_part .planing_one .sing_in,
+#team_part .team_img i,
+#team_part .team_main,
+#contact_part .contact-form .btn_button,
+#footer_area .footer_social a i {
+    -moz-transition: all linear .5s;
+    -webkit-transition: all linear .5s;
+    -ms-transition: all linear .5s;
+    -o-transition: all linear .5s;
+    transition: all linear .5s;
+}
+
+#banner_part .banner_text h2 span,
+#about_part .class_head h2,
+#services_part .section-title h2,
+#price_part .work_head h2,
+#team_part .team_head h2,
+#contact_part .contact-heading h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 46px;
+}
+
+#banner_part .banner_text p,
+#about_part .hire_text p,
+#about_part .about_text p,
+#services_part .icon_box_01 p,
+#feedback_part .text_slider .text_one p,
+#feedback_part .text_slider .text_one p span.span_none,
+#counter_part .counter_text p,
+#contact_part .contact-text p,
+#footer_area .footer_body p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+/*------------------------------------------------------------
+02. Header Part Start
+--------------------------------------------------------------*/
+button:focus {
+    outline: 0;
+}
+
+.header_part {
+    background-color: #02C0CE;
+}
+
+header {
+    background-color: rgba(53, 53, 53, 0.25);
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+header .head_cont {
+    position: relative;
+}
+
+header .navbar-brand {
+    position: absolute;
+    left: 0;
+    top: -6px;
+}
+
+header a.navbar-brand {
+    padding: 10px 48px !important;
+    background-color: rgba(49, 49, 49, 0.2) !important;
+    transform: skew(-30deg);
+}
+
+header a.navbar-brand img {
+    transform: skew(30deg);
+}
+
+header .navbar-nav .nav-item .nav-link {
+    padding: 20px 12px 16px 10px;
+    position: relative;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+header .navbar-nav .nav-item .nav-link.active:after {
+    opacity: 1;
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #02C0CE;
+}
+
+header .navbar-nav .nav-item .nav-link:hover:after {
+    width: 100%;
+    opacity: 1;
+}
+
+header .navbar-nav .nav-item .nav-link.active {
+    width: 100%;
+    opacity: 1;
+    background-color: #fff;
+    color: #222;
+}
+
+header .navbar-nav .nav-item .nav-link:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.menufix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #02C0CE;
+}
+
+.menufix a.navbar-brand {
+    padding: 5px 48px !important;
+}
+
+.menufix .navbar-brand {
+    position: absolute;
+    top: 0;
+}
+
+/*------------------------------------------------------------
+Header Part End
+--------------------------------------------------------------*/
+/*------------------------------------------------------------
+03. Banner Part Start
+--------------------------------------------------------------*/
+#banner_part .slider_active {
+    position: relative;
+    z-index: 1;
+}
+
+#banner_part .slider_active:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+
+#banner_part .banner_text h1 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 100px;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+#banner_part .banner_text h2 span {
+    color: #02C0CE;
+    text-transform: capitalize;
+    display: inline-block;
+}
+
+#banner_part .banner_text a {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    padding: 10px 20px;
+    border: 1px solid #02C0CE;
+    border-radius: 30px;
+}
+
+#banner_part .banner_text a:hover {
+    background-color: #02C0CE;
+}
+
+#banner_part .banner_text p {
+    padding-top: 20px;
+    color: #fff;
+}
+
+#banner_part .banner_text .banner_button {
+    padding: 20px 0px 20px 0px;
+}
+
+.slider_active {
+    -webkit-background-size: cover !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    padding-top: 254px;
+    padding-bottom: 117px;
+    position: relative;
+    z-index: 1;
+}
+
+.slider_active:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+/*------------------------------------------------------------
+Banner Part End
+--------------------------------------------------------------*/
+/*------------------------------------------------------------
+04. About Part Start
+--------------------------------------------------------------*/
+#about_part_one {
+    padding: 50px 0 80px 0;
+    background-color: #131F33;
+}
+
+.about_part {
+    padding: 150px 0 80px 0 !important;
+}
+
+#about_part {
+    padding: 70px 0 80px 0;
+}
+
+#about_part .about-content h3 {
+    font-family: "Poppins", sans-serif;
+    padding-bottom: 10px;
+}
+
+#about_part .about_img img {
+    padding-top: 5px;
+}
+
+#about_part .hire_text h3 {
+    font-family: "Poppins", sans-serif;
+    padding-bottom: 34px;
+    color: #222;
+}
+
+#about_part .hire_text p {
+    padding-bottom: 17px;
+    text-align: justify;
+}
+
+#about_part .hire_text a {
+    font-size: 16px;
+    font-weight: 600;
+    color: #222;
+    padding: 10px 20px;
+    border: 1px solid #02C0CE;
+    border-radius: 30px;
+}
+
+#about_part .hire_text a:hover {
+    background-color: #02C0CE;
+    color: #fff;
+}
+
+#about_part .about_ditl {
+    margin-left: 30px;
+}
+
+#about_part .about_text .title {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 34px;
+    color: #101010;
+}
+
+#about_part .about_text .sub_title {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #02C0CE;
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+
+#about_part .about_text p {
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+#about_part .about_add ul {
+    list-style: none;
+}
+
+#about_part .about_add ul li {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #02C0CE;
+    margin-bottom: 15px;
+}
+
+#about_part .about_add ul li span {
+    display: inline-block;
+    font-size: 14px;
+    color: #101010;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+#about_part .about_botton .about_botton1,
+#about_part .about_botton2 {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #222;
+    padding: 10px 15px;
+    border: 1px solid #02C0CE;
+    border-radius: 30px;
+}
+
+#about_part .about_botton {
+    margin-top: 30px;
+}
+
+#about_part .about_botton1:hover {
+    background-color: #02C0CE;
+    color: #fff;
+}
+
+#about_part .about_botton2 {
+    background-color: #02C0CE;
+    color: #fff !important;
+    text-align: center;
+    margin-left: 20px;
+}
+
+#about_part .about_botton2:hover {
+    background-color: #02C0CE;
+    color: #fff;
+}
+
+#about_part ul.nav-pills {
+    margin-top: 30px;
+}
+
+#about_part .class_head h2 {
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+#about_part .nav-pills .nav-link {
+    border-radius: 0px;
+    font-size: 18px;
+    padding: 10px 100px;
+    border: 1px solid #02C0CE;
+}
+
+#about_part .nav-pills .nav-link.margin_left {
+    margin-left: 5px;
+}
+
+#about_part ul.pills_ul li.nav-item {
+    float: left;
+    padding: 50px 0;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    transform: scale(0.99);
+}
+
+#about_part ul.pills_ul li.nav-item a {
+    font-size: 24px;
+    width: 50%;
+}
+
+#about_part .nav-pills .nav-link.active,
+#about_part .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #02C0CE;
+}
+
+/*------------------------------------------------------------
+About Part End
+--------------------------------------------------------------*/
+/*------------------------------------------------------------
+05. Skills Part Start
+--------------------------------------------------------------*/
+.class_head_skill {
+    padding-top: 80px;
+}
+
+.skill_heading_two {
+    padding-bottom: 50px !important;
+}
+
+.skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 1.5em 0px;
+}
+
+.skills:last-of-type {
+    margin-bottom: 0;
+}
+
+.skills:first-of-type {
+    margin-top: 0;
+}
+
+.skills .bochor {
+    font-weight: bold;
+    color: #02C0CE;
+    font-size: 24px;
+    width: 80px;
+    line-height: 1;
+}
+
+.skills .line {
+    width: 40px;
+    height: 2px;
+    background-color: #02C0CE;
+    margin: 0px 30px;
+}
+
+.skills .direction {
+    width: 100%;
+}
+
+.skills .direction span {
+    display: block;
+    margin: 0 0 5px;
+}
+
+.skills .direction span:last-child {
+    color: #02C0CE;
+}
+
+.skills .direction .bar {
+    width: 100%;
+    margin: auto;
+    padding: 10px 0;
+    overflow: hidden;
+}
+
+.skills .direction .bar label {
+    font-weight: bold;
+}
+
+.skills .direction .bar .progress {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 5px;
+    overflow: visible;
+    font-size: .75rem;
+    background-color: #3b3e5a;
+    border-radius: 0;
+}
+
+.skills .direction .bar .progress .progress-bar {
+    position: relative;
+    background-color: #02C0CE;
+}
+
+.skills .direction .bar .progress .progress-bar:before {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: -5px;
+    z-index: 1;
+    height: 15px;
+    width: 5px;
+    background-color: #02C0CE;
+}
+
+@-webkit-keyframes slideInLefts {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-400px);
+        transform: translateX(-400px);
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInLefts {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-400px);
+        -ms-transform: translateX(-400px);
+        transform: translateX(-400px);
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.slideInLefts {
+    -webkit-animation-name: slideInLefts;
+    animation-name: slideInLefts;
+}
+
+/*------------------------------------------------------------
+Skills Part End
+--------------------------------------------------------------*/
+/*------------------------------------------------------------
+06. Services Part Start
+--------------------------------------------------------------*/
+#services_part {
+    padding: 70px 0 10px 0;
+}
+
+#services_part .section-title h2 {
+    padding-bottom: 33px;
+    text-transform: uppercase;
+}
+
+#services_part .icon_box_01 {
+    position: relative;
+    padding-left: 80px;
+    margin-bottom: 65px;
+}
+
+#services_part .icon_box_01:hover i {
+    transform: rotateY(360deg);
+}
+
+#services_part .icon_box_01 i {
+    font-size: 50px;
+    color: #02C0CE;
+    line-height: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: rotateY(0deg);
+}
+
+#services_part .icon_box_01 h3 {
+    font-size: 22px;
+    margin: 0px 0 10px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+#services_part .icon_box_01 p {
+    margin: 0;
+    padding-right: 20px;
+}
+
+#services_part .icon_box_01.withBG {
+    background: #f7f7f7;
+    padding: 91px 45px 85px 145px;
+    margin-bottom: 0;
+}
+
+#services_part .icon_box_01.withBG i {
+    top: 91px;
+    left: 67px;
+}
+
+/*------------------------------------------------------------
+Services Part End
+--------------------------------------------------------------*/
+/*------------------------------------------------------------
+07. Price Part Start
+--------------------------------------------------------------*/
+#price_part {
+    padding: 70px 0 96px 0;
+    text-align: center;
+}
+
+#price_part .work_head h2 {
+    text-transform: uppercase;
+}
+
+#price_part .planing_one {
+    position: relative;
+    margin-top: 40px;
+}
+
+#price_part .planing_one:hover {
+    transform: scale(1.1);
+}
+
+#price_part .planing_one:hover .heading_color {
+    background-color: #02C0CE;
+    color: #fff;
+}
+
+#price_part .planing_one h3 {
+    background-color: #f1f1f1;
+    text-transform: uppercase;
+    padding: 10px 0;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#price_part .planing_one .circle_one {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1px solid #f1f1f1;
+}
+
+#price_part .planing_one .circle_one .circle {
+    width: 130px;
+    height: 120px;
+    border-radius: 50%;
+    border: 1px solid #f1f1f1;
+    margin: 0 auto;
+}
+
+#price_part .planing_one .circle_one .circle h3 {
+    padding-top: 15px;
+    font-weight: 700;
+    color: #353535;
+}
+
+#price_part .planing_one .circle_one .circle h3 span {
+    font-size: 18px;
+    color: #353535;
+}
+
+#price_part .planing_one .circle_one .circle h6 {
+    padding-top: 10px;
+}
+
+#price_part .planing_one .paragraph_area {
+    background-color: #f1f1f1;
+    padding-bottom: 30px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+#price_part .planing_one .paragraph_area .paragraph_one {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+#price_part .planing_one .paragraph_area .paragraph_two {
+    padding-bottom: 10px;
+}
+
+#price_part .planing_one .paragraph_area .paragraph_three {
+    padding-bottom: 10px;
+}
+
+#price_part .planing_one .paragraph_area .paragraph_four {
+    padding-bottom: 10px;
+}
+
+#price_part .planing_one .sing_in {
+    border: 1px solid #f1f1f1;
+    position: absolute;
+    bottom: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+#price_part .planing_one .sing_in a {
+    font-size: 14px;
+    color: #353535;
+    padding: 0px 20px;
+}
+
+#price_part .planing_one:hover .sing_in {
+    background-color: #02C0CE;
+    border: 1px solid transparent;
+}
+
+#price_part .planing_one:hover .sing_in a {
+    color: #fff;
+}
+
+/*------------------------------------------------------------
+Price Part End
+--------------------------------------------------------------*/
+/*------------------------------------------------------------
+08. Team Part Start
+--------------------------------------------------------------*/
+#team_part {
+    padding: 70px 0 40px;
+}
+
+#team_part .team_head h2 {
+    padding-bottom: 27px;
+    text-transform: uppercase;
+}
+
+#team_part .team_img {
+    position: relative;
+}
+
+#team_part .team_img i {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 22px;
+    line-height: 50px;
+    text-align: center;
+    border: 1px solid #02C0CE;
+    color: #02C0CE;
+}
+
+#team_part .team_img i:hover {
+    background-color: #02C0CE;
+    color: #fff;
+}
+
+#team_part .team_img .fa-facebook-f {
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: scale(0);
+    -moz-transition: all linear .2s;
+    -webkit-transition: all linear .2s;
+    -ms-transition: all linear .2s;
+    -o-transition: all linear .2s;
+    transition: all linear .2s;
+}
+
+#team_part .team_img .fa-twitter {
+    position: absolute;
+    right: 45px;
+    top: -38px;
+    transform: scale(0);
+    -moz-transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+    transition: all linear .4s;
+}
+
+#team_part .team_img .fa-pinterest {
+    position: absolute;
+    right: -15px;
+    top: 10px;
+    transform: scale(0);
+    -moz-transition: all linear .6s;
+    -webkit-transition: all linear .6s;
+    -ms-transition: all linear .6s;
+    -o-transition: all linear .6s;
+    transition: all linear .6s;
+}
+
+#team_part .team_img .fa-behance {
+    position: absolute;
+    right: -50px;
+    top: 75px;
+    transform: scale(0);
+    -moz-transition: all linear .8s;
+    -webkit-transition: all linear .8s;
+    -ms-transition: all linear .8s;
+    -o-transition: all linear .8s;
+    transition: all linear .8s;
+}
+
+#team_part .team_img .fa-linkedin-in {
+    position: absolute;
+    right: -65px;
+    top: 140px;
+    transform: scale(0);
+    -moz-transition: all linear 1s;
+    -webkit-transition: all linear 1s;
+    -ms-transition: all linear 1s;
+    -o-transition: all linear 1s;
+    transition: all linear 1s;
+}
+
+#team_part .team_main {
+    transform: scale(0.8);
+}
+
+#team_part .team_main:hover {
+    transform: scale(0.7);
+}
+
+#team_part .team_main:hover .team_img .fa-facebook-f {
+    transform: scale(1);
+}
+
+#team_part .team_main:hover .team_img .fa-twitter {
+    transform: scale(1);
+}
+
+#team_part .team_main:hover .team_img .fa-pinterest {
+    transform: scale(1);
+}
+
+#team_part .team_main:hover .team_img .fa-behance {
+    transform: scale(1);
+}
+
+#team_part .team_main:hover .team_img .fa-linkedin-in {
+    transform: scale(1);
+}
+
+#team_part .team_main .team_text h3 {
+    font-size: 20px;
+    color: #353535;
+    font-weight: 500;
+    padding-bottom: 8px;
+}
+
+#team_part .team_main .team_text h4 {
+    font-size: 16px;
+    color: #353535;
+}
+
+/*------------------------------------------------------------
+Team Part End
+--------------------------------------------------------------*/
+/*------------------------------------------------------------
+09. Feedback Part Start
+--------------------------------------------------------------*/
+#feedback_part {
+    padding: 80px 0 70px 0;
+    background: url(../images/banner1.jpg) left top no-repeat !important;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+#feedback_part:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    opacity: .7;
+    z-index: -1;
+}
+
+#feedback_part .text_slider {
+    padding: 30px 50px;
+    background-color: #ddd;
+    border-radius: 5px;
+    position: relative;
+}
+
+#feedback_part .text_slider:after {
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-top: 20px solid #ddd;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+}
+
+#feedback_part .text_slider .text_one p {
+    color: #555555;
+    padding-bottom: 17px;
+}
+
+#feedback_part .text_slider .text_one img {
+    padding-bottom: 5px;
+}
+
+#feedback_part .text_slider .text_one h3 {
+    font-size: 18px;
+    color: #353535;
+    padding-bottom: 5px;
+}
+
+#feedback_part .text_slider .text_one p span {
+    font-size: 14px;
+}
+
+#feedback_part .client_slider {
+    margin-top: 30px;
+    padding-left: 50px;
+}
+
+#feedback_part .client_slider .circle_img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    opacity: .5;
+}
+
+#feedback_part .client_slider .slick-list {
+    padding: 20px 0 !important;
+}
+
+#feedback_part .client_slider .slick-center .circle_img {
+    transform: scale(1.2);
+    border: 1px solid #744fa0;
+    opacity: 1;
+}
+
+/*------------------------------------------------------------
+Feedback Part End
+--------------------------------------------------------------*/
+/*------------------------------------------------------------
+10. Company Part Start
+--------------------------------------------------------------*/
+#company_part {
+    padding: 75px 0 75px;
+}
+
+#company_part .company_text {
+    display: none;
+}
+
+#company_part .slide_main {
+    position: relative;
+}
+
+#company_part .slide_main .fa-chevron-left {
+    position: absolute;
+    left: -55px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 28px;
+    color: #02C0CE;
+}
+
+#company_part .slide_main .fa-chevron-right {
+    position: absolute;
+    right: -55px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 28px;
+    color: #02C0CE;
+}
+
+/*------------------------------------------------------------
+Company part end
+--------------------------------------------------------------*/
+/*------------------------------------------------------------
+11. Counter Part Start
+--------------------------------------------------------------*/
+#counter_part {
+    padding: 80px 0 80px;
+    background: url(../images/counter-bg.jpg) left top no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-color: #f6f6f6;
+    position: relative;
+    z-index: 1;
+}
+
+#counter_part:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+    z-index: -1;
+}
+
+#counter_part .counter_text {
+    border: 1px solid #02C0CE;
+    text-align: center;
+    padding: 15px 10px;
+}
+
+#counter_part .counter_text h3 {
+    color: #fff;
+    font-size: 52px;
+    font-weight: 700;
+}
+
+#counter_part .counter_text p {
+    color: #fff;
+    padding-top: 5px;
+}
+
+/*------------------------------------------------------------
+Counter part end
+--------------------------------------------------------------*/
+/*------------------------------------------------------------
+12. Contact Part Start
+--------------------------------------------------------------*/
+#contact_part {
+    padding: 80px 0;
+    background-color: #131F33;
+    color: #fff;
+}
+
+#contact_part .contact-heading span {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    color: #02C0CE;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    line-height: 1;
+}
+
+#contact_part .contact-heading h2 {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    color: #fff;
+    padding-bottom: 10px;
+}
+
+#contact_part .contact-text p {
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+#contact_part .contact-text h5 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+#contact_part .contact-text h5 span {
+    color: #02C0CE;
+}
+
+#contact_part .contact-text .contact-list ul li {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+#contact_part .contact-text .contact-list ul li:last-child {
+    margin-bottom: 0;
+}
+
+#contact_part .contact-text .contact-list ul li i {
+    color: #02C0CE;
+    width: 18px;
+    margin-right: 5px;
+}
+
+#contact_part .contact-text .contact-list ul li span {
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+
+#contact_part .contact-form input,
+#contact_part .contact-form textarea {
+    width: 100%;
+    border: none;
+    background: #19273e;
+    padding: 20px 30px;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+    color: #8b98af;
+    font-size: 14px;
+}
+
+#contact_part .contact-form input::placeholder,
+#contact_part .contact-form textarea::placeholder {
+    color: #8b98af;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+#contact_part .contact-form textarea {
+    height: 130px;
+    margin-bottom: 40px;
+}
+
+#contact_part .contact-form .btn_button {
+    color: #fff;
+    border: 1px solid #02C0CE;
+    padding: 10px 36px;
+}
+
+#contact_part .contact-form .btn_button:hover {
+    background-color: #02C0CE;
+    border: 1px solid transparent;
+    color: #fff;
+}
+
+/*------------------------------------------------------------
+Contact Part End
+--------------------------------------------------------------*/
+/*------------------------------------------------------------
+13. Footer Part Start
+--------------------------------------------------------------*/
+#footer_area {
+    background-color: #19273E;
+    padding: 35px 0 20px;
+}
+
+#footer_area .footer_body img {
+    padding-bottom: 30px;
+}
+
+#footer_area .footer_body p {
+    padding-top: 20px;
+    color: #fff;
+}
+
+#footer_area .footer_body span {
+    color: #02C0CE;
+    text-transform: capitalize;
+}
+
+#footer_area .footer_social a i {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #02C0CE;
+    line-height: 50px;
+    margin: 0 5px;
+    font-size: 18px;
+}
+
+#footer_area .footer_social a i:hover {
+    background-color: #02C0CE;
+    color: #fff;
+}
+
+/*------------------------------------------------------------
+Footer Part End
+--------------------------------------------------------------*/
+/*------------------------------------------------------------
+14. Scroll Button Part Start
+--------------------------------------------------------------*/
+#bto_part .bto {
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+    z-index: 999;
+    display: none;
+    cursor: pointer;
+}
+
+#bto_part .bto i {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #02C0CE;
+    color: #f1f1f1;
+    line-height: 40px;
+    text-align: center;
+}
+
+/*------------------------------------------------------------
+Scroll Button Part End
+--------------------------------------------------------------*/
+/*------------------------------------------------------------
+15. Preloader Part Start
+--------------------------------------------------------------*/
+#preloader {
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    margin-top: 0px;
+    top: 0px;
+    z-index: 99;
+}
+
+#preloader #loading-center {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#preloader #loading-center #loading-center-absolute {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 150px;
+    width: 150px;
+    margin-top: -75px;
+    margin-left: -75px;
+}
+
+#preloader #loading-center #loading-center-absolute .object {
+    width: 20px;
+    height: 20px;
+    background-color: #02C0CE;
+    float: left;
+    margin-right: 20px;
+    margin-top: 65px;
+    -moz-border-radius: 50% 50% 50% 50%;
+    -webkit-border-radius: 50% 50% 50% 50%;
+    border-radius: 50% 50% 50% 50%;
+}
+
+#preloader #loading-center #loading-center-absolute #object_one {
+    -webkit-animation: object_one 1.5s infinite;
+    animation: object_one 1.5s infinite;
+}
+
+@-webkit-keyframes object_one {
+    75% {
+        -webkit-transform: scale(0);
+    }
+}
+
+@keyframes object_one {
+    75% {
+        transform: scale(0);
+        -webkit-transform: scale(0);
+    }
+}
+
+#preloader #loading-center #loading-center-absolute #object_two {
+    -webkit-animation: object_two 1.5s infinite;
+    animation: object_two 1.5s infinite;
+    -webkit-animation-delay: 0.25s;
+    animation-delay: 0.25s;
+}
+
+@-webkit-keyframes object_two {
+    75% {
+        -webkit-transform: scale(0);
+    }
+}
+
+@keyframes object_two {
+    75% {
+        transform: scale(0);
+        -webkit-transform: scale(0);
+    }
+}
+
+#preloader #loading-center #loading-center-absolute #object_three {
+    -webkit-animation: object_three 1.5s infinite;
+    animation: object_three 1.5s infinite;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+
+@-webkit-keyframes object_three {
+    75% {
+        -webkit-transform: scale(0);
+    }
+}
+
+@keyframes object_three {
+    75% {
+        transform: scale(0);
+        -webkit-transform: scale(0);
+    }
+}
+
+/*------------------------------------------------------------
+Preloader Part End
+--------------------------------------------------------------*/
+/* Large devices (laptops/desktops, 1200px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 1199px) {
+    .menufix a.navbar-brand {
+        padding: 5px 0px !important;
+    }
+
+    #feedback_part .client_slider .slick-center .circle_img {
+        -webkit-transform: translateX(50%);
+        transform: translateX(-50%);
+        position: absolute;
+        left: 50%;
+        margin-left: -23px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    header a.navbar-brand {
+        padding: 5px 0px !important;
+    }
+
+    .navbar-brand {
+        top: -1px;
+    }
+
+    .navbar-toggler {
+        margin: 15px 15px;
+    }
+
+    header a.bg-dark:focus,
+    a.bg-dark:hover,
+    button.bg-dark:focus,
+    button.bg-dark:hover {
+        background-color: none !important;
+    }
+
+    .menu_fix {
+        top: 0;
+        background-color: #e23e38;
+    }
+
+    .menu_fix a.navbar-brand {
+        padding: 5px 0px !important;
+    }
+
+    header .navbar-nav {
+        text-align: center;
+    }
+
+    header .navbar-nav .nav-item .nav-link:hover {
+        padding-left: 0px;
+        line-height: 20px;
+        color: #fff;
+    }
+
+    header .navbar-nav .nav-item .nav-link:hover:after {
+        display: none;
+    }
+
+    /*------------------------------------------------------------
+  02. Banner Part Start
+  --------------------------------------------------------------*/
+    #banner_part .banner_text h1 {
+        font-size: 42px;
+        line-height: 70px;
+    }
+
+    #banner_part .banner_text h2 span {
+        font-size: 28px;
+    }
+
+    #banner_part .banner_text p {
+        font-size: 15px;
+        padding: 0px 130px;
+        line-height: 24px;
+        margin-top: 20px;
+    }
+
+    /*------------------------------------------------------------
+  Banner Part End
+  --------------------------------------------------------------*/
+    /*------------------------------------------------------------
+  03. About Part Start
+  --------------------------------------------------------------*/
+    #about_part {
+        padding: 44px 0 40px 0;
+    }
+
+    #about_part .about-content h3 {
+        padding-bottom: 0px;
+        padding-top: 30px;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    #about_part .class_head h2 {
+        font-size: 32px;
+        padding-bottom: 15px;
+    }
+
+    #about_part .nav-pills .nav-link {
+        font-size: 16px;
+        padding: 10px 50px;
+    }
+
+    #about_part .about_ditl {
+        margin-left: 0px;
+    }
+
+    #about_part .about_text .title {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 24px;
+        color: #101010;
+        margin-bottom: 0px;
+        padding-top: 20px;
+    }
+
+    #about_part .about_text .sub_title {
+        font-size: 16px;
+        letter-spacing: 1px;
+        line-height: 24px;
+        padding-bottom: 15px;
+        padding-top: 5px;
+    }
+
+    #about_part .about_text p {
+        line-height: 22px;
+        font-size: 14px;
+    }
+
+    #about_part .about_add ul li {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    #about_part .about_botton {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    #about_part .hire_text h3 {
+        font-size: 24px;
+        line-height: 32px;
+        padding-bottom: 15px;
+    }
+
+    #about_part .hire_text p {
+        font-size: 14px;
+        line-height: 22px;
+        padding-bottom: 10px;
+        text-align: justify;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+    }
+
+    #about_part .nav-pills .nav-link,
+    #about_part .nav-pills .show > .nav-link {
+        color: #101010;
+    }
+
+    .skills {
+        display: -webkit-block;
+        display: -ms-block;
+        display: block;
+    }
+
+    .skills .bochor {
+        padding-bottom: 5px;
+    }
+
+    .skills .line {
+        margin: 0px 0px 5px 0;
+    }
+
+    .skills .direction span {
+        margin: 0px;
+    }
+
+    /*------------------------------------------------------------
+  About Part End
+  --------------------------------------------------------------*/
+    /*------------------------------------------------------------
+  04. Services Part Start
+  --------------------------------------------------------------*/
+    #services_part {
+        padding: 44px 0 10px 0;
+        text-align: center;
+    }
+
+    #services_part .section-title h2 {
+        font-size: 32px;
+        line-height: 32px;
+        padding-bottom: 50px;
+    }
+
+    #services_part .icon_box_01 {
+        padding-left: 0px;
+        margin-bottom: 0px;
+    }
+
+    #services_part .icon_box_01 i {
+        position: inherit;
+        padding-bottom: 15px;
+    }
+
+    #services_part .icon_box_01 h3 {
+        font-size: 18px;
+        margin: 0px 0 10px;
+    }
+
+    #services_part .icon_box_01 p {
+        padding: 0px;
+        margin-bottom: 40px;
+        font-size: 14px;
+    }
+
+    /*------------------------------------------------------------
+  Services Part End
+  --------------------------------------------------------------*/
+    /*------------------------------------------------------------
+  05. Price Part Start
+  --------------------------------------------------------------*/
+    #price_part {
+        padding: 44px 0 40px 0;
+    }
+
+    #price_part .work_head .heading-one {
+        font-size: 32px;
+        padding-bottom: 10px;
+    }
+
+    #price_part .planing_one:hover {
+        transform: scale(1);
+    }
+
+    /*------------------------------------------------------------
+  Price Part End
+  --------------------------------------------------------------*/
+    /*------------------------------------------------------------
+  06. Team Part Start
+  --------------------------------------------------------------*/
+    #team_part {
+        padding: 44px 0 40px 0;
+    }
+
+    #team_part .team_head h2 {
+        font-size: 32px;
+        padding-bottom: 15px;
+    }
+
+    #team_part .team_main:hover:active {
+        transform: scale(0.7);
+    }
+
+    #team_part .team_img .fa-twitter {
+        right: 46px;
+    }
+
+    #team_part .team_img .fa-pinterest {
+        right: -8px;
+        top: 1px;
+    }
+
+    #team_part .team_img .fa-behance {
+        right: -47px;
+        top: 50px;
+    }
+
+    #team_part .team_img .fa-linkedin-in {
+        right: -58px;
+        top: 105px;
+    }
+
+    /*------------------------------------------------------------
+  Team Part End
+  --------------------------------------------------------------*/
+    /*------------------------------------------------------------
+  07. Feedback Part Start
+  --------------------------------------------------------------*/
+    #feedback_part {
+        padding: 44px 0 40px 0;
+    }
+
+    #feedback_part .client_slider .slick-center .circle_img {
+        -webkit-transform: translateX(50%);
+        transform: translateX(-50%);
+        position: absolute;
+        left: 50%;
+        margin-left: -23px;
+    }
+
+    /*------------------------------------------------------------
+  Feedback Part End
+  --------------------------------------------------------------*/
+    /*------------------------------------------------------------
+  08. Counter Part Start
+  --------------------------------------------------------------*/
+    #counter_part {
+        padding: 44px 0 30px;
+    }
+
+    #counter_part .counter_text {
+        border: 1px solid #cccccc;
+        text-align: center;
+        padding: 15px 10px;
+        margin-bottom: 30px;
+    }
+
+    /*------------------------------------------------------------
+  Counter Part End
+  --------------------------------------------------------------*/
+    /*------------------------------------------------------------
+  09. Company Part Start
+  --------------------------------------------------------------*/
+    #company_part {
+        padding: 40px 0 35px;
+    }
+
+    /*------------------------------------------------------------
+  Company Part End
+  --------------------------------------------------------------*/
+    /*------------------------------------------------------------
+  10. Contact Part Start
+  --------------------------------------------------------------*/
+    #contact_part {
+        padding: 40px 0 35px;
+    }
+
+    #contact_part .contact-heading h2 {
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+
+    #contact_part .contact-text p {
+        margin-bottom: 30px;
+        font-size: 14px;
+    }
+
+    #contact_part .contact-text .contact-list ul li:last-child {
+        margin-bottom: 30px;
+    }
+
+    #contact_part .contact-form .btn_button {
+        padding: 8px 30px;
+    }
+
+    #contact_part .contact-form input,
+    #contact_part .contact-form textarea {
+        padding: 15px 15px;
+        margin-bottom: 20px;
+    }
+
+    /*------------------------------------------------------------
+  Contact Part End
+  --------------------------------------------------------------*/
+    /*------------------------------------------------------------
+  11. Footer Part Start
+  --------------------------------------------------------------*/
+    #footer_area {
+        padding: 40px 0 35px;
+    }
+
+    #footer_area .footer_social a i {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+    }
+
+    /*------------------------------------------------------------
+  Footer Part End
+  --------------------------------------------------------------*/
+}
+
+/* Small devices (landscape phones, 576px and up */
+@media only screen and (min-width: 575px) and (max-width: 767px) {
+    header a.navbar-brand {
+        padding: 5px 60px !important;
+    }
+
+    header a.bg-dark:focus,
+    header a.bg-dark:hover,
+    header button.bg-dark:focus,
+    header button.bg-dark:hover {
+        background-color: none !important;
+    }
+
+    header .navbar-toggler {
+        margin: 15px 15px;
+    }
+
+    header .navbar-nav {
+        text-align: center;
+    }
+
+    header .navbar-nav .nav-item .nav-link:hover {
+        padding-left: 0px;
+        line-height: 20px;
+        color: #222;
+    }
+
+    header .navbar-nav .nav-item .nav-link:hover:after {
+        display: none;
+    }
+
+    .menu_fix {
+        top: 0;
+        background-color: #e23e38;
+    }
+
+    .menu_fix a.navbar-brand {
+        padding: 5px 40px !important;
+    }
+
+    /*------------------------------------------------------------
+  02. Banner Part Start
+  --------------------------------------------------------------*/
+    #banner_part .banner_text h1 {
+        font-size: 42px;
+        line-height: 70px;
+    }
+
+    #banner_part .banner_text h2 span {
+        font-size: 28px;
+    }
+
+    #banner_part .banner_text p {
+        padding-top: 15px;
+        font-size: 14px;
+        padding-bottom: 10px;
+        padding: 0px 70px 10px;
+    }
+
+    /*------------------------------------------------------------
+  Banner Part End
+  --------------------------------------------------------------*/
+    /*------------------------------------------------------------
+  03. About Part Start
+  --------------------------------------------------------------*/
+    #about_part {
+        padding: 44px 0 40px 0;
+    }
+
+    #about_part .class_head h2 {
+        font-size: 32px;
+        padding-bottom: 15px;
+    }
+
+    #about_part .nav-pills .nav-link {
+        font-size: 16px;
+        padding: 10px 50px;
+    }
+
+    #about_part .about_ditl {
+        margin-left: 0px;
+    }
+
+    #about_part .about_text .title {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 24px;
+        color: #101010;
+        margin-bottom: 0px;
+        padding-top: 20px;
+    }
+
+    #about_part .about_text .sub_title {
+        font-size: 16px;
+        letter-spacing: 1px;
+        line-height: 24px;
+        padding-bottom: 15px;
+        padding-top: 5px;
+    }
+
+    #about_part .about_text p {
+        line-height: 22px;
+        font-size: 14px;
+    }
+
+    #about_part .about_add ul li {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    #about_part .about_botton {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    #about_part .hire_text h3 {
+        font-size: 24px;
+        line-height: 32px;
+        padding-bottom: 15px;
+    }
+
+    #about_part .hire_text p {
+        font-size: 14px;
+        line-height: 22px;
+        padding-bottom: 10px;
+        text-align: justify;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+    }
+
+    #about_part .about-content h3 {
+        font-size: 24px;
+        line-height: 32px;
+        padding-top: 30px;
+    }
+
+    #about_part .nav-pills .nav-link,
+    #about_part .nav-pills .show > .nav-link {
+        color: #101010;
+    }
+
+    .skills {
+        display: -webkit-block;
+        display: -ms-block;
+        display: block;
+    }
+
+    .skills .bochor {
+        padding-bottom: 5px;
+    }
+
+    .skills .line {
+        margin: 0px 0px 5px 0;
+    }
+
+    .skills .direction span {
+        margin: 0px;
+    }
+
+    /*------------------------------------------------------------
+  About Part End
+  --------------------------------------------------------------*/
+    /*------------------------------------------------------------
+  04. Services Part Start
+  --------------------------------------------------------------*/
+    #services_part {
+        padding: 44px 0 10px 0;
+        text-align: center;
+    }
+
+    #services_part .section-title h2 {
+        font-size: 32px;
+        line-height: 32px;
+        padding-bottom: 50px;
+    }
+
+    #services_part .icon_box_01 {
+        padding-left: 0px;
+        margin-bottom: 0px;
+    }
+
+    #services_part .icon_box_01 i {
+        position: inherit;
+        padding-bottom: 15px;
+    }
+
+    #services_part .icon_box_01 h3 {
+        font-size: 18px;
+        margin: 0px 0 10px;
+    }
+
+    #services_part .icon_box_01 p {
+        padding: 0px;
+        margin-bottom: 40px;
+        font-size: 14px;
+    }
+
+    /*------------------------------------------------------------
+  Services Part End
+  --------------------------------------------------------------*/
+    /*------------------------------------------------------------
+  05. Price Part Start
+  --------------------------------------------------------------*/
+    #price_part {
+        padding: 44px 0 40px 0;
+    }
+
+    #price_part .work_head .heading-one {
+        font-size: 32px;
+        padding-bottom: 10px;
+    }
+
+    #price_part .planing_one:hover {
+        transform: scale(1);
+    }
+
+    /*------------------------------------------------------------
+  Price Part End
+  --------------------------------------------------------------*/
+    /*------------------------------------------------------------
+  06. Team Part Start
+  --------------------------------------------------------------*/
+    #team_part {
+        padding: 44px 0 40px 0;
+    }
+
+    #team_part .team_head h2 {
+        font-size: 32px;
+        padding-bottom: 15px;
+    }
+
+    #team_part .team_main:hover:active {
+        transform: scale(0.7);
+    }
+
+    #team_part .team_img .fa-twitter {
+        right: 20px;
+    }
+
+    #team_part .team_img .fa-pinterest {
+        right: -21px;
+        top: 1px;
+    }
+
+    #team_part .team_img .fa-behance {
+        right: -47px;
+        top: 50px;
+    }
+
+    #team_part .team_img .fa-linkedin-in {
+        right: -58px;
+        top: 105px;
+    }
+
+    .skill_heading_two {
+        padding-bottom: 30px !important;
+    }
+
+    /*------------------------------------------------------------
+  Team Part End
+  --------------------------------------------------------------*/
+    /*------------------------------------------------------------
+  07. Feedback Part Start
+  --------------------------------------------------------------*/
+    #feedback_part {
+        padding: 44px 0 40px 0;
+    }
+
+    #feedback_part .client_slider .slick-center .circle_img {
+        -webkit-transform: translateX(50%);
+        transform: translateX(-50%);
+        position: absolute;
+        left: 50%;
+        margin-left: -23px;
+    }
+
+    /*------------------------------------------------------------
+  Feedback Part End
+  --------------------------------------------------------------*/
+    /*------------------------------------------------------------
+  08. Counter Part Start
+  --------------------------------------------------------------*/
+    #counter_part {
+        padding: 44px 0 30px;
+    }
+
+    #counter_part .counter_text {
+        border: 1px solid #cccccc;
+        text-align: center;
+        padding: 15px 10px;
+        margin-bottom: 30px;
+    }
+
+    /*------------------------------------------------------------
+  Counter Part End
+  --------------------------------------------------------------*/
+    /*------------------------------------------------------------
+  09. Company Part Start
+  --------------------------------------------------------------*/
+    #company_part {
+        padding: 40px 0 35px;
+    }
+
+    /*------------------------------------------------------------
+  Company Part End
+  --------------------------------------------------------------*/
+    /*------------------------------------------------------------
+  10. Contact Part Start
+  --------------------------------------------------------------*/
+    #contact_part {
+        padding: 40px 0 35px;
+    }
+
+    #contact_part .contact-heading h2 {
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+
+    #contact_part .contact-text p {
+        margin-bottom: 30px;
+        font-size: 14px;
+    }
+
+    #contact_part .contact-text .contact-list ul li:last-child {
+        margin-bottom: 30px;
+    }
+
+    #contact_part .contact-form .btn_button {
+        padding: 8px 30px;
+    }
+
+    #contact_part .contact-form input,
+    #contact_part .contact-form textarea {
+        padding: 15px 15px;
+        margin-bottom: 20px;
+    }
+
+    /*------------------------------------------------------------
+  Contact Part End
+  --------------------------------------------------------------*/
+    /*------------------------------------------------------------
+  11. Footer Part Start
+  --------------------------------------------------------------*/
+    #footer_area {
+        padding: 40px 0 35px;
+    }
+
+    #footer_area .footer_social a i {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+    }
+
+    /*------------------------------------------------------------
+  Footer Part End
+  --------------------------------------------------------------*/
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 575px) {
+
+    /*------------------------------------------------------------
+    01. Header Part Start
+    --------------------------------------------------------------*/
+    header ul.navbar-nav {
+        text-align: center;
+    }
+
+    header a.navbar-brand {
+        padding: 15px 10px !important;
+        background-color: rgba(49, 49, 49, 0.2) !important;
+        transform: skew(-30deg);
+    }
+
+    .navbar-toggler {
+        margin: 19.5px 35px;
+    }
+
+    header a.bg-dark:focus,
+    a.bg-dark:hover,
+    button.bg-dark:focus,
+    button.bg-dark:hover {
+        background-color: none !important;
+    }
+
+    .menufix a.navbar-brand {
+        padding: 9px 10px !important;
+    }
+
+    /*------------------------------------------------------------
+  Header Part End
+  --------------------------------------------------------------*/
+    /*------------------------------------------------------------
+  02. Banner Part Start
+  --------------------------------------------------------------*/
+    .slider_active {
+        padding-top: 170px;
+        padding-bottom: 70px;
+    }
+
+    #banner_part .banner_text h1 {
+        font-size: 42px;
+        line-height: 70px;
+    }
+
+    #banner_part .banner_text h2 span {
+        font-size: 24px;
+        font-weight: 600;
+        color: #02C0CE;
+        line-height: 42px;
+        text-transform: capitalize;
+        display: inline-block;
+    }
+
+    #banner_part .banner_text p {
+        padding-top: 15px;
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+
+    #banner_part .banner_text a {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    /*------------------------------------------------------------
+  Banner Part End
+  --------------------------------------------------------------*/
+    /*------------------------------------------------------------
+  03. About Part Start
+  --------------------------------------------------------------*/
+    #about_part {
+        padding: 44px 0 40px 0;
+    }
+
+    #about_part .nav-pills .nav-link,
+    #about_part .nav-pills .show > .nav-link {
+        color: #101010;
+    }
+
+    #about_part .class_head h2 {
+        font-size: 32px;
+        padding-bottom: 15px;
+    }
+
+    #about_part .nav-pills .nav-link {
+        font-size: 16px;
+        padding: 10px 50px;
+    }
+
+    #about_part .about_ditl {
+        margin-left: 0px;
+    }
+
+    #about_part .about_text .title {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 24px;
+        color: #101010;
+        margin-bottom: 0px;
+        padding-top: 20px;
+    }
+
+    #about_part .about_text .sub_title {
+        font-size: 16px;
+        letter-spacing: 1px;
+        line-height: 24px;
+        padding-bottom: 15px;
+        padding-top: 5px;
+    }
+
+    #about_part .about_text p {
+        line-height: 22px;
+        font-size: 14px;
+    }
+
+    #about_part .about_add ul li {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    #about_part .about_botton {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    #about_part .hire_text h3 {
+        font-size: 24px;
+        line-height: 32px;
+        padding-bottom: 15px;
+    }
+
+    #about_part .hire_text p {
+        font-size: 14px;
+        line-height: 22px;
+        padding-bottom: 10px;
+        text-align: justify;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+    }
+
+    #about_part .about-content h3 {
+        font-size: 24px;
+        line-height: 32px;
+        padding-top: 30px;
+    }
+
+    .skills {
+        display: -webkit-block;
+        display: -ms-block;
+        display: block;
+    }
+
+    .skills .bochor {
+        padding-bottom: 5px;
+    }
+
+    .skills .line {
+        margin: 0px 0px 5px 0;
+    }
+
+    .skills .direction span {
+        margin: 0px;
+    }
+
+    /*------------------------------------------------------------
+  About Part End
+  --------------------------------------------------------------*/
+    /*------------------------------------------------------------
+  04. Services Part Start
+  --------------------------------------------------------------*/
+    #services_part {
+        padding: 44px 0 10px 0;
+        text-align: center;
+    }
+
+    #services_part .section-title h2 {
+        font-size: 32px;
+        line-height: 32px;
+        padding-bottom: 50px;
+    }
+
+    #services_part .icon_box_01 {
+        padding-left: 0px;
+        margin-bottom: 0px;
+    }
+
+    #services_part .icon_box_01 i {
+        position: inherit;
+        padding-bottom: 15px;
+    }
+
+    #services_part .icon_box_01 h3 {
+        font-size: 18px;
+        margin: 0px 0 10px;
+    }
+
+    #services_part .icon_box_01 p {
+        padding: 0px;
+        margin-bottom: 40px;
+        font-size: 14px;
+    }
+
+    /*------------------------------------------------------------
+  Services Part End
+  --------------------------------------------------------------*/
+    /*------------------------------------------------------------
+  05. Price Part Start
+  --------------------------------------------------------------*/
+    #price_part {
+        padding: 44px 0 40px 0;
+    }
+
+    #price_part .work_head h2 {
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    #price_part .work_head .heading-one {
+        font-size: 32px;
+        padding-bottom: 10px;
+    }
+
+    #price_part .planing_one:hover {
+        transform: scale(1);
+    }
+
+    /*------------------------------------------------------------
+  Price Part End
+  --------------------------------------------------------------*/
+    /*------------------------------------------------------------
+  06. Team Part Start
+  --------------------------------------------------------------*/
+    #team_part {
+        padding: 44px 0 40px 0;
+    }
+
+    #team_part .team_head h2 {
+        font-size: 32px;
+        padding-bottom: 15px;
+    }
+
+    #team_part .team_main:hover:active {
+        transform: scale(0.7);
+    }
+
+    #team_part .team_img .fa-twitter {
+        right: 34px;
+    }
+
+    .skill_heading_two {
+        padding-bottom: 30px !important;
+    }
+
+    .class_head_skill {
+        padding-top: 40px;
+    }
+
+    /*------------------------------------------------------------
+  Team Part End
+  --------------------------------------------------------------*/
+    /*------------------------------------------------------------
+  07. Feedback Part Start
+  --------------------------------------------------------------*/
+    #feedback_part {
+        padding: 44px 0 40px 0;
+        background-size: cover;
+    }
+
+    #feedback_part .client_slider .slick-center .circle_img {
+        -webkit-transform: translateX(50%);
+        transform: translateX(-50%);
+        position: absolute;
+        left: 50%;
+        margin-left: -23px;
+    }
+
+    #feedback_part .text_slider .text_one p {
+        text-align: justify;
+    }
+
+    #feedback_part .text_slider .text_one p span {
+        display: none;
+    }
+
+    /*------------------------------------------------------------
+  Feedback Part End
+  --------------------------------------------------------------*/
+    /*------------------------------------------------------------
+  08. Counter Part Start
+  --------------------------------------------------------------*/
+    #counter_part {
+        padding: 44px 0 30px;
+    }
+
+    #counter_part .counter_text {
+        border: 1px solid #cccccc;
+        text-align: center;
+        padding: 15px 10px;
+        margin-bottom: 30px;
+    }
+
+    #counter_part .counter_text h3 {
+        color: #fff;
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+    /*------------------------------------------------------------
+  Counter Part End
+  --------------------------------------------------------------*/
+    /*------------------------------------------------------------
+  09. Company Part Start
+  --------------------------------------------------------------*/
+    #company_part {
+        padding: 40px 0 35px;
+    }
+
+    /*------------------------------------------------------------
+  Company Part End
+  --------------------------------------------------------------*/
+    /*------------------------------------------------------------
+  10. Contact Part Start
+  --------------------------------------------------------------*/
+    #contact_part {
+        padding: 40px 0 35px;
+    }
+
+    #contact_part .contact-heading h2 {
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+
+    #contact_part .contact-text p {
+        margin-bottom: 30px;
+        font-size: 14px;
+    }
+
+    #contact_part .contact-text .contact-list ul li:last-child {
+        margin-bottom: 30px;
+    }
+
+    #contact_part .contact-form input,
+    #contact_part .contact-form textarea {
+        padding: 15px 15px;
+        margin-bottom: 20px;
+    }
+
+    #contact_part .contact-form .btn_button {
+        padding: 8px 30px;
+    }
+
+    /*------------------------------------------------------------
+  Contact Part End
+  --------------------------------------------------------------*/
+    /*------------------------------------------------------------
+  11. Footer Part Start
+  --------------------------------------------------------------*/
+    #footer_area {
+        padding: 40px 0 35px;
+    }
+
+    #footer_area .footer_social a i {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+    }
+
+    #footer_area .footer_body p {
+        padding-top: 10px;
+        color: #fff;
+        font-size: 14px;
+    }
+
+    /*------------------------------------------------------------
+  Footer Part End
+  --------------------------------------------------------------*/
+    #bto_part .bto {
+        bottom: 15px;
+        right: 15px;
+    }
+
+    #bto_part .bto i {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        border-radius: 50%;
+    }
+}
+
+@media only screen and (min-width: 566px) and (max-width: 575px) {
+    #team_part .team_img .fa-facebook-f {
+        left: 74%;
+    }
+}
+
+@media only screen and (min-width: 551px) and (max-width: 565px) {
+    #team_part .team_img .fa-facebook-f {
+        left: 74%;
+    }
+}
+
+@media only screen and (min-width: 531px) and (max-width: 550px) {
+    #team_part .team_img .fa-facebook-f {
+        left: 72%;
+    }
+}
+
+@media only screen and (min-width: 511px) and (max-width: 530px) {
+    #team_part .team_img .fa-facebook-f {
+        left: 72%;
+    }
+}
+
+@media only screen and (min-width: 491px) and (max-width: 510px) {
+    #team_part .team_img .fa-facebook-f {
+        left: 70%;
+    }
+}
+
+@media only screen and (min-width: 471px) and (max-width: 490px) {
+    #team_part .team_img .fa-facebook-f {
+        left: 68%;
+    }
+}
+
+@media only screen and (min-width: 451px) and (max-width: 470px) {
+    #team_part .team_img .fa-facebook-f {
+        left: 66%;
+    }
+}
+
+@media only screen and (min-width: 431px) and (max-width: 450px) {
+    #team_part .team_img .fa-facebook-f {
+        left: 64%;
+    }
+}
+
+@media only screen and (min-width: 411px) and (max-width: 430px) {
+    #team_part .team_img .fa-facebook-f {
+        left: 60%;
+    }
+}
+
+@media only screen and (min-width: 391px) and (max-width: 410px) {
+    #team_part .team_img .fa-facebook-f {
+        left: 60%;
+    }
+}
+
+@media only screen and (min-width: 356px) and (max-width: 390px) {
+    #team_part .team_img .fa-facebook-f {
+        left: 58%;
+    }
+}
+
+@media only screen and (min-width: 350px) and (max-width: 355px) {
+    #team_part .team_img .fa-facebook-f {
+        left: 56%;
+    }
+}
+
+@media only screen and (min-width: 330px) and (max-width: 350px) {
+    #team_part .team_img .fa-facebook-f {
+        left: 52%;
+    }
+}
+
+/*# sourceMappingURL=style.css.map */

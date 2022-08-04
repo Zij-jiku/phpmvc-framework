@@ -1,0 +1,1320 @@
+/*------------------------------------------------------------
+02. Header Part Start
+--------------------------------------------------------------*/
+button:focus {
+    outline: 0;
+}
+
+.header_part {
+    background-color: $brand-color;
+}
+
+header {
+    background-color: rgba(53, 53, 53, .25);
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+
+    .head_cont {
+        position: relative;
+    }
+
+    .navbar-brand {
+        position: absolute;
+        left: 0;
+        top: -6px;
+    }
+
+    a.navbar-brand {
+        padding: 10px 48px !important;
+        background-color: rgba(49, 49, 49, .20) !important;
+        transform: skew(-30deg);
+
+    }
+
+    a.navbar-brand img {
+        transform: skew(30deg);
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        padding: 20px 12px 16px 10px;
+        position: relative;
+        color: #fff;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
+        @extend %transition;
+    }
+
+    .navbar-nav .nav-item .nav-link.active:after {
+        opacity: 1;
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 3px;
+        background-color: $brand-color;
+        @extend %transition;
+    }
+
+    .navbar-nav .nav-item .nav-link:hover:after {
+        width: 100%;
+        opacity: 1;
+    }
+
+    .navbar-nav .nav-item .nav-link.active {
+        width: 100%;
+        opacity: 1;
+        background-color: #fff;
+        color: #222;
+    }
+
+    .navbar-nav .nav-item .nav-link:hover {
+        background-color: #fff;
+        color: #000;
+    }
+
+}
+
+.menufix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #02C0CE;
+    @extend %transition;
+
+    a.navbar-brand {
+        padding: 5px 48px !important;
+    }
+
+    .navbar-brand {
+        position: absolute;
+        top: 0;
+    }
+}
+
+/*------------------------------------------------------------
+Header Part End
+--------------------------------------------------------------*/
+/*------------------------------------------------------------
+03. Banner Part Start
+--------------------------------------------------------------*/
+#banner_part {
+    .slider_active {
+        position: relative;
+        z-index: 1;
+
+        &:after {
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, .70);
+            z-index: -1;
+        }
+    }
+
+    .banner_text {
+        h1 {
+            font-family: $paragraph-font;
+            font-weight: 700;
+            font-size: 60px;
+            line-height: 100px;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 span {
+            @extend %title;
+            color: $brand-color;
+            text-transform: capitalize;
+            display: inline-block;
+        }
+
+        a {
+            font-size: 16px;
+            font-weight: 600;
+            color: #fff;
+            padding: 10px 20px;
+            border: 1px solid $brand-color;
+            border-radius: 30px;
+            @extend %transition;
+
+            &:hover {
+                background-color: $brand-color;
+            }
+        }
+
+        p {
+            @extend %paragraph;
+            padding-top: 20px;
+            color: #fff;
+        }
+
+        .banner_button {
+            padding: 20px 0px 20px 0px;
+        }
+    }
+}
+
+.slider_active {
+    -webkit-background-size: cover !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    padding-top: 254px;
+    padding-bottom: 117px;
+    position: relative;
+    z-index: 1;
+
+    &:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, .60);
+        z-index: -1;
+    }
+}
+
+/*------------------------------------------------------------
+Banner Part End
+--------------------------------------------------------------*/
+
+/*------------------------------------------------------------
+04. About Part Start
+--------------------------------------------------------------*/
+#about_part_one {
+    padding: 50px 0 80px 0;
+    background-color: #131F33;
+}
+
+.about_part {
+    padding: 150px 0 80px 0 !important;
+}
+
+#about_part {
+    padding: 70px 0 80px 0;
+
+    .about-content {
+        h3 {
+            font-family: $poppins-heading;
+            padding-bottom: 10px;
+        }
+    }
+
+    .about_img img {
+        padding-top: 5px;
+    }
+
+    .hire_text {
+        h3 {
+            font-family: "Poppins", sans-serif;
+            padding-bottom: 34px;
+            color: #222;
+        }
+
+        p {
+            @extend %paragraph;
+            padding-bottom: 17px;
+            text-align: justify;
+        }
+
+        a {
+            font-size: 16px;
+            font-weight: 600;
+            color: #222;
+            padding: 10px 20px;
+            border: 1px solid $brand-color;
+            border-radius: 30px;
+            @extend %transition;
+
+            &:hover {
+                background-color: $brand-color;
+                color: #fff;
+            }
+        }
+    }
+
+    .about_ditl {
+        margin-left: 30px;
+    }
+
+    .about_text {
+        .title {
+            font-size: 28px;
+            font-weight: 500;
+            line-height: 34px;
+            color: #101010;
+        }
+
+        .sub_title {
+            font-size: 18px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            line-height: 26px;
+            text-transform: uppercase;
+            color: $brand-color;
+            padding-bottom: 30px;
+            padding-top: 10px;
+        }
+
+        p {
+            @extend %paragraph;
+            text-align: justify;
+            margin-bottom: 30px;
+        }
+    }
+
+    .about_add {
+        ul {
+            list-style: none;
+
+            li {
+                display: block;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 24px;
+                color: $brand-color;
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    .about_add ul li span {
+        display: inline-block;
+        font-size: 14px;
+        color: #101010;
+        font-weight: 700;
+        line-height: 24px;
+    }
+
+    .about_botton .about_botton1,
+    .about_botton2 {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 24px;
+        color: #222;
+        padding: 10px 15px;
+        border: 1px solid $brand-color;
+        border-radius: 30px;
+        @extend %transition;
+    }
+
+    .about_botton {
+        margin-top: 30px;
+    }
+
+    .about_botton1:hover {
+        background-color: $brand-color;
+        color: #fff;
+    }
+
+    .about_botton2 {
+        background-color: $brand-color;
+        color: #fff !important;
+        text-align: center;
+        margin-left: 20px;
+        @extend %transition;
+    }
+
+    .about_botton2:hover {
+        background-color: $brand-color;
+        color: #fff;
+    }
+
+    ul.nav-pills {
+        margin-top: 30px;
+    }
+
+    .class_head h2 {
+        @extend %title;
+        padding-bottom: 10px;
+        text-transform: uppercase;
+    }
+
+    .nav-pills .nav-link {
+        border-radius: 0px;
+        font-size: 18px;
+        padding: 10px 100px;
+        border: 1px solid $brand-color;
+    }
+
+    .nav-pills .nav-link.margin_left {
+        margin-left: 5px;
+    }
+
+    ul.pills_ul li.nav-item {
+        float: left;
+        padding: 50px 0;
+        background-color: #f1f1f1;
+        cursor: pointer;
+        @extend %transition;
+        transform: scale(.99);
+    }
+
+    ul.pills_ul li.nav-item a {
+        font-size: 24px;
+        width: 50%;
+    }
+
+    .nav-pills .nav-link.active,
+    .nav-pills .show > .nav-link {
+        color: #fff;
+        background-color: $brand-color;
+    }
+}
+
+/*------------------------------------------------------------
+About Part End
+--------------------------------------------------------------*/
+
+/*------------------------------------------------------------
+05. Skills Part Start
+--------------------------------------------------------------*/
+.class_head_skill {
+    padding-top: 80px;
+}
+
+.skill_heading_two {
+    padding-bottom: 50px !important;
+}
+
+.skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 1.5em 0px;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+
+    &:first-of-type {
+        margin-top: 0;
+    }
+
+    .bochor {
+        font-weight: bold;
+        color: $brand-color;
+        font-size: 24px;
+        width: 80px;
+        line-height: 1;
+    }
+
+    .line {
+        width: 40px;
+        height: 2px;
+        background-color: $brand-color;
+        margin: 0px 30px;
+    }
+
+    .direction {
+        width: 100%;
+
+        span {
+            display: block;
+            margin: 0 0 5px;
+
+            &:last-child {
+                color: $brand-color;
+            }
+        }
+
+        .bar {
+            width: 100%;
+            margin: auto;
+            padding: 10px 0;
+            overflow: hidden;
+
+            label {
+                font-weight: bold;
+            }
+
+            .progress {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                height: 5px;
+                overflow: visible;
+                font-size: .75rem;
+                background-color: #3b3e5a;
+                border-radius: 0;
+
+                .progress-bar {
+                    position: relative;
+                    background-color: $brand-color;
+
+                    &:before {
+                        position: absolute;
+                        content: "";
+                        right: 0;
+                        top: -5px;
+                        z-index: 1;
+                        height: 15px;
+                        width: 5px;
+                        background-color: $brand-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@-webkit-keyframes slideInLefts {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-400px);
+        transform: translateX(-400px);
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInLefts {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-400px);
+        -ms-transform: translateX(-400px);
+        transform: translateX(-400px);
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.slideInLefts {
+    -webkit-animation-name: slideInLefts;
+    animation-name: slideInLefts;
+}
+
+/*------------------------------------------------------------
+Skills Part End
+--------------------------------------------------------------*/
+
+/*------------------------------------------------------------
+06. Services Part Start
+--------------------------------------------------------------*/
+#services_part {
+    padding: 70px 0 10px 0;
+
+    .section-title h2 {
+        @extend %title;
+        padding-bottom: 33px;
+        text-transform: uppercase;
+    }
+
+    .icon_box_01 {
+        position: relative;
+        padding-left: 80px;
+        margin-bottom: 65px;
+
+        &:hover i {
+            transform: rotateY(360deg);
+        }
+
+        i {
+            font-size: 50px;
+            color: $brand-color;
+            line-height: 1;
+            position: absolute;
+            left: 0;
+            top: 0;
+            transform: rotateY(0deg);
+            @extend %transition;
+        }
+
+        h3 {
+            font-size: 22px;
+            margin: 0px 0 10px;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        p {
+            @extend %paragraph;
+            margin: 0;
+            padding-right: 20px;
+        }
+    }
+
+    .icon_box_01.withBG {
+        background: #f7f7f7;
+        padding: 91px 45px 85px 145px;
+        margin-bottom: 0;
+
+        i {
+            top: 91px;
+            left: 67px;
+        }
+    }
+}
+
+/*------------------------------------------------------------
+Services Part End
+--------------------------------------------------------------*/
+
+/*------------------------------------------------------------
+07. Price Part Start
+--------------------------------------------------------------*/
+#price_part {
+    padding: 70px 0 96px 0;
+    text-align: center;
+
+    .work_head {
+        h2 {
+            @extend %title;
+            text-transform: uppercase;
+        }
+    }
+
+    .planing_one {
+        position: relative;
+        margin-top: 40px;
+        @extend %transition;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        &:hover .heading_color {
+            background-color: $brand-color;
+            color: #fff;
+        }
+
+        h3 {
+            background-color: #f1f1f1;
+            text-transform: uppercase;
+            padding: 10px 0;
+            border-radius: 20px 20px 0px 0px;
+            @extend %transition;
+
+        }
+
+        .circle_one {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border: 1px solid #f1f1f1;
+
+            .circle {
+                width: 130px;
+                height: 120px;
+                border-radius: 50%;
+                border: 1px solid #f1f1f1;
+                margin: 0 auto;
+                @extend %transition;
+
+                h3 {
+                    padding-top: 15px;
+                    font-weight: 700;
+                    color: #353535;
+
+                    span {
+                        font-size: 18px;
+                        color: #353535;
+                    }
+                }
+
+                h6 {
+                    padding-top: 10px;
+                }
+
+            }
+
+        }
+
+        .paragraph_area {
+            background-color: #f1f1f1;
+            padding-bottom: 30px;
+            border-radius: 0px 0px 20px 20px;
+
+            .paragraph_one {
+                padding-top: 20px;
+                padding-bottom: 10px;
+            }
+
+            .paragraph_two {
+                padding-bottom: 10px;
+            }
+
+            .paragraph_three {
+                padding-bottom: 10px;
+            }
+
+            .paragraph_four {
+                padding-bottom: 10px;
+            }
+        }
+
+        .sing_in {
+            border: 1px solid #f1f1f1;
+            position: absolute;
+            bottom: -18px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            @extend %transition;
+        }
+
+        .sing_in a {
+            font-size: 14px;
+            color: #353535;
+            padding: 0px 20px;
+        }
+
+        &:hover .sing_in {
+            background-color: $brand-color;
+            border: 1px solid transparent;
+        }
+
+        &:hover .sing_in a {
+            color: #fff;
+        }
+    }
+}
+
+/*------------------------------------------------------------
+Price Part End
+--------------------------------------------------------------*/
+
+/*------------------------------------------------------------
+08. Team Part Start
+--------------------------------------------------------------*/
+#team_part {
+    padding: 70px 0 40px;
+
+    .team_head h2 {
+        @extend %title;
+        padding-bottom: 27px;
+        text-transform: uppercase;
+    }
+
+    .team_img {
+        position: relative;
+
+        i {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-size: 22px;
+            line-height: 50px;
+            text-align: center;
+            border: 1px solid $brand-color;
+            color: $brand-color;
+            @extend %transition;
+
+            &:hover {
+                background-color: $brand-color;
+                color: #fff;
+            }
+        }
+
+        .fa-facebook-f {
+            position: absolute;
+            top: -60px;
+            left: 50%;
+            transform: scale(0);
+            -moz-transition: all linear .2s;
+            -webkit-transition: all linear .2s;
+            -ms-transition: all linear .2s;
+            -o-transition: all linear .2s;
+            transition: all linear .2s;
+        }
+
+        .fa-twitter {
+            position: absolute;
+            right: 45px;
+            top: -38px;
+            transform: scale(0);
+            -moz-transition: all linear .4s;
+            -webkit-transition: all linear .4s;
+            -ms-transition: all linear .4s;
+            -o-transition: all linear .4s;
+            transition: all linear .4s;
+
+        }
+
+        .fa-pinterest {
+            position: absolute;
+            right: -15px;
+            top: 10px;
+            transform: scale(0);
+            -moz-transition: all linear .6s;
+            -webkit-transition: all linear .6s;
+            -ms-transition: all linear .6s;
+            -o-transition: all linear .6s;
+            transition: all linear .6s;
+        }
+
+        .fa-behance {
+            position: absolute;
+            right: -50px;
+            top: 75px;
+            transform: scale(0);
+            -moz-transition: all linear .8s;
+            -webkit-transition: all linear .8s;
+            -ms-transition: all linear .8s;
+            -o-transition: all linear .8s;
+            transition: all linear .8s;
+        }
+
+        .fa-linkedin-in {
+            position: absolute;
+            right: -65px;
+            top: 140px;
+            transform: scale(0);
+            -moz-transition: all linear 1s;
+            -webkit-transition: all linear 1s;
+            -ms-transition: all linear 1s;
+            -o-transition: all linear 1s;
+            transition: all linear 1s;
+        }
+    }
+
+    .team_main {
+        transform: scale(.8);
+        @extend %transition;
+
+        &:hover {
+            transform: scale(.7);
+        }
+
+        &:hover .team_img .fa-facebook-f {
+            transform: scale(1);
+        }
+
+        &:hover .team_img .fa-twitter {
+            transform: scale(1);
+
+        }
+
+        &:hover .team_img .fa-pinterest {
+            transform: scale(1);
+
+        }
+
+        &:hover .team_img .fa-behance {
+            transform: scale(1);
+        }
+
+        &:hover .team_img .fa-linkedin-in {
+            transform: scale(1);
+        }
+
+        .team_text {
+            h3 {
+                font-size: 20px;
+                color: #353535;
+                font-weight: 500;
+                padding-bottom: 8px;
+            }
+
+            h4 {
+                font-size: 16px;
+                color: #353535;
+            }
+        }
+    }
+}
+
+/*------------------------------------------------------------
+Team Part End
+--------------------------------------------------------------*/
+
+/*------------------------------------------------------------
+09. Feedback Part Start
+--------------------------------------------------------------*/
+#feedback_part {
+    padding: 80px 0 70px 0;
+    background: url(../images/banner1.jpg) left top no-repeat !important;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+
+    &:after {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background-color: black;
+        opacity: .7;
+        z-index: -1;
+    }
+
+    .text_slider {
+        padding: 30px 50px;
+        background-color: #ddd;
+        border-radius: 5px;
+        position: relative;
+
+        &:after {
+            position: absolute;
+            content: "";
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            border-top: 20px solid #ddd;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+        }
+
+        .text_one {
+            p {
+                @extend %paragraph;
+                color: #555555;
+                padding-bottom: 17px;
+
+                span.span_none {
+                    @extend %paragraph;
+                }
+            }
+
+            img {
+                padding-bottom: 5px;
+            }
+
+            h3 {
+                font-size: 18px;
+                color: #353535;
+                padding-bottom: 5px;
+            }
+
+            p span {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .client_slider {
+        margin-top: 30px;
+        padding-left: 50px;
+
+        .circle_img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            opacity: .5;
+        }
+
+        .slick-list {
+            padding: 20px 0 !important;
+        }
+
+        .slick-center .circle_img {
+            transform: scale(1.2);
+            border: 1px solid #744fa0;
+            opacity: 1;
+        }
+    }
+}
+
+/*------------------------------------------------------------
+Feedback Part End
+--------------------------------------------------------------*/
+
+/*------------------------------------------------------------
+10. Company Part Start
+--------------------------------------------------------------*/
+#company_part {
+    padding: 75px 0 75px;
+
+    .company_text {
+        display: none;
+    }
+
+    .slide_main {
+        position: relative;
+
+        .fa-chevron-left {
+            position: absolute;
+            left: -55px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            font-size: 28px;
+            color: $brand-color;
+
+        }
+
+        .fa-chevron-right {
+            position: absolute;
+            right: -55px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            font-size: 28px;
+            color: $brand-color;
+        }
+    }
+}
+
+/*------------------------------------------------------------
+Company part end
+--------------------------------------------------------------*/
+
+/*------------------------------------------------------------
+11. Counter Part Start
+--------------------------------------------------------------*/
+#counter_part {
+    padding: 80px 0 80px;
+    background: url(../images/counter-bg.jpg) left top no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-color: #f6f6f6;
+    position: relative;
+    z-index: 1;
+
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.65);
+        z-index: -1;
+    }
+
+    .counter_text {
+        border: 1px solid $brand-color;
+        text-align: center;
+        padding: 15px 10px;
+
+        h3 {
+            color: #fff;
+            font-size: 52px;
+            font-weight: 700;
+        }
+
+        p {
+            @extend %paragraph;
+            color: #fff;
+            padding-top: 5px;
+        }
+    }
+}
+
+/*------------------------------------------------------------
+Counter part end
+--------------------------------------------------------------*/
+
+/*------------------------------------------------------------
+12. Contact Part Start
+--------------------------------------------------------------*/
+#contact_part {
+    padding: 80px 0;
+    background-color: #131F33;
+    color: #fff;
+
+    .contact-heading {
+        span {
+            display: block;
+            font-size: 14px;
+            font-weight: 700;
+            color: $brand-color;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+            line-height: 1;
+        }
+
+        h2 {
+            @extend %title;
+            margin-bottom: 0;
+            text-transform: uppercase;
+            color: #fff;
+            padding-bottom: 10px;
+        }
+    }
+
+    .contact-text {
+        p {
+            @extend %paragraph;
+            margin-bottom: 30px;
+            color: #fff;
+        }
+
+        h5 {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1;
+            margin-bottom: 20px;
+            color: #fff;
+
+            span {
+                color: $brand-color;
+            }
+        }
+
+        .contact-list {
+            ul li {
+                display: block;
+                margin-bottom: 10px;
+                font-size: 14px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                i {
+                    color: $brand-color;
+                    width: 18px;
+                    margin-right: 5px;
+                }
+
+                span {
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    .contact-form {
+
+        input,
+        textarea {
+            width: 100%;
+            border: none;
+            background: #19273e;
+            padding: 20px 30px;
+            margin-bottom: 30px;
+            text-transform: capitalize;
+            color: #8b98af;
+            font-size: 14px;
+
+            &::placeholder {
+                color: #8b98af;
+                font-size: 14px;
+                letter-spacing: 1px;
+            }
+        }
+
+        textarea {
+            height: 130px;
+            margin-bottom: 40px;
+        }
+
+        .btn_button {
+            color: #fff;
+            border: 1px solid $brand-color;
+            padding: 10px 36px;
+            @extend %transition;
+
+            &:hover {
+                background-color: $brand-color;
+                border: 1px solid transparent;
+                color: #fff;
+            }
+        }
+    }
+}
+
+/*------------------------------------------------------------
+Contact Part End
+--------------------------------------------------------------*/
+
+/*------------------------------------------------------------
+13. Footer Part Start
+--------------------------------------------------------------*/
+#footer_area {
+    background-color: #19273E;
+    padding: 35px 0 20px;
+
+    .footer_body {
+        img {
+            padding-bottom: 30px;
+        }
+
+        p {
+            @extend %paragraph;
+            padding-top: 20px;
+            color: #fff;
+        }
+
+        span {
+            color: $brand-color;
+            text-transform: capitalize;
+        }
+    }
+
+    .footer_social a i {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #fff;
+        color: $brand-color;
+        line-height: 50px;
+        margin: 0 5px;
+        font-size: 18px;
+        @extend %transition;
+
+        &:hover {
+            background-color: $brand-color;
+            color: #fff;
+        }
+    }
+}
+
+/*------------------------------------------------------------
+Footer Part End
+--------------------------------------------------------------*/
+
+/*------------------------------------------------------------
+14. Scroll Button Part Start
+--------------------------------------------------------------*/
+#bto_part {
+    .bto {
+        position: fixed;
+        bottom: 35px;
+        right: 35px;
+        z-index: 999;
+        display: none;
+        cursor: pointer;
+
+        i {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: $brand-color;
+            color: #f1f1f1;
+            line-height: 40px;
+            text-align: center;
+        }
+    }
+}
+
+/*------------------------------------------------------------
+Scroll Button Part End
+--------------------------------------------------------------*/
+
+/*------------------------------------------------------------
+15. Preloader Part Start
+--------------------------------------------------------------*/
+#preloader {
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    margin-top: 0px;
+    top: 0px;
+    z-index: 99;
+
+    #loading-center {
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        #loading-center-absolute {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            height: 150px;
+            width: 150px;
+            margin-top: -75px;
+            margin-left: -75px;
+
+            .object {
+                width: 20px;
+                height: 20px;
+                background-color: $brand-color;
+                float: left;
+                margin-right: 20px;
+                margin-top: 65px;
+                -moz-border-radius: 50% 50% 50% 50%;
+                -webkit-border-radius: 50% 50% 50% 50%;
+                border-radius: 50% 50% 50% 50%;
+            }
+
+            #object_one {
+                -webkit-animation: object_one 1.5s infinite;
+                animation: object_one 1.5s infinite;
+
+                @-webkit-keyframes object_one {
+                    75% {
+                        -webkit-transform: scale(0);
+                    }
+                }
+
+                @keyframes object_one {
+
+                    75% {
+                        transform: scale(0);
+                        -webkit-transform: scale(0);
+                    }
+
+                }
+            }
+
+            #object_two {
+                -webkit-animation: object_two 1.5s infinite;
+                animation: object_two 1.5s infinite;
+                -webkit-animation-delay: 0.25s;
+                animation-delay: 0.25s;
+
+                @-webkit-keyframes object_two {
+                    75% {
+                        -webkit-transform: scale(0);
+                    }
+                }
+
+                @keyframes object_two {
+                    75% {
+                        transform: scale(0);
+                        -webkit-transform: scale(0);
+                    }
+                }
+            }
+
+            #object_three {
+                -webkit-animation: object_three 1.5s infinite;
+                animation: object_three 1.5s infinite;
+                -webkit-animation-delay: 0.5s;
+                animation-delay: 0.5s;
+
+                @-webkit-keyframes object_three {
+                    75% {
+                        -webkit-transform: scale(0);
+                    }
+                }
+
+                @keyframes object_three {
+                    75% {
+                        transform: scale(0);
+                        -webkit-transform: scale(0);
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*------------------------------------------------------------
+Preloader Part End
+--------------------------------------------------------------*/

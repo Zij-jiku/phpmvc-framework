@@ -1,0 +1,25 @@
+$brand-color: #02C0CE;
+$poppins-heading : 'Poppins', sans-serif;
+$paragraph-font : 'Open Sans', sans-serif;
+
+%transition {
+    -moz-transition: all linear .5s;
+    -webkit-transition: all linear .5s;
+    -ms-transition: all linear .5s;
+    -o-transition: all linear .5s;
+    transition: all linear .5s;
+}
+
+%title {
+    font-family: $poppins-heading;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 46px;
+}
+
+%paragraph {
+    font-family: $paragraph-font;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
